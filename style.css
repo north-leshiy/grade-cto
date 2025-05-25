@@ -95,7 +95,8 @@
 }
 
 .slide.dark {
-	background: url("./pictures/dark-bg.svg") no-repeat;
+	/*background: url("./pictures/dark-bg.svg") no-repeat;*/
+	background: #000 no-repeat;
 	background-size: contain;
 }
 
