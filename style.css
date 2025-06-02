@@ -76,27 +76,32 @@
 
 .slide::after {
 	background: none;
-	color: #C0C1C2;
-	right: 0;
+	display: block;
+	color: #838383;
+	right: 15px;
 	left: auto;
-	top: 15px;
+	top: 22px;
 	bottom: auto;
-	text-align: left;
 	font-family: "Montserrat", "proxima nova", sans-serif !important;
 	font-size: 18px;
+	width: 42px;
+	height: 42px;
+	padding: 0;
+	text-align: center;
+	line-height: 42px;
+
 }
 .slide.clear::before {
 	display: none;
 }
 
 .slide.light {
-	/*background: url("./pictures/boost-white.png") no-repeat;*/
+	background: url("./pictures/page@2x.svg") no-repeat;
 	background-size: contain;
 }
 
 .slide.dark {
-	/*background: url("./pictures/dark-bg.svg") no-repeat;*/
-	background: #000 no-repeat;
+	background: #000 url("./pictures/page-black@2x.svg") no-repeat;
 	background-size: contain;
 }
 
@@ -168,4 +173,45 @@
 	right: 40px;
 	top: 40px;
 	width: 100px;
+}
+
+/* END SLIDE */
+.end-slide {
+	color: #ffffff;
+	background: #000 url("./pictures/end@2x.svg") no-repeat;
+	background-size: cover;
+}
+.end-slide .slide-text{
+	margin-top: 50px;
+	font-size: 30px;
+}
+
+.end-slide .slide-title{
+	color: #ffffff;
+	top: 150px;
+	font-size: 50px
+}
+
+
+.end-slide .qr{
+	float: right;
+}
+
+
+.end-slide .tg-icon{
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	background: url("./pictures/tg-icon.webp") no-repeat;
+	background-size: contain;
+	vertical-align: middle;
+}
+
+
+.end-slide .tg-text{
+	font-weight: bold;
+	position: absolute;
+	bottom: 20px;
+	left: 50px;
+	font-size: 30px;
 }
